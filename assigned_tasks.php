@@ -12,14 +12,13 @@ else{
 
 $per_page = 10;
 $start = ($page-1)*10;
-$per_page2 = 3;
-$start2 = ($page-1)*3;
+
 
 $select = " SELECT * FROM tasks_table ORDER BY deadline limit $start,$per_page";
-$select2 = " SELECT * FROM tasks_table ORDER BY deadline limit $start2,$per_page2";
+
 
 $result = mysqli_query($conn, $select);
-$result2 = mysqli_query($conn, $select2);
+
 
 $index = 0;
 $title = "";
@@ -138,23 +137,6 @@ $assigned = "";
                                         </tr>
                                 <?php }} ?>
                             </table>     
-                            <?php 
-                                $query = "SELECT status FROM tasks_table where status='1'";
-                                $pr_result = mysqli_query($conn, $query);
-                                $record = mysqli_num_rows($pr_result);
-                                $total_page2 = ceil($record/$per_page2);
-                                if($page>1){
-                                    echo "<a href='assigned_user.php?page=".($page-1)."' class='btn btn-danger'>Previous</a>";
-                                }
-
-                                for($i=1;$i<=$total_page2;$i++){
-                                    echo "<a href='#?page=".$i."' class='btn btn-primary'>$i</a>";
-                                }
-                                if($page>0 && $page<$total_page2){
-                                    echo "<a href='#?page=".($page+1)."' class='btn btn-danger'>Next</a>";
-                                }
-
-                            ?> 
                         </div>
                     </form>
                 </div>

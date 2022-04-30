@@ -84,7 +84,7 @@ $status = "";
                                                 if($row['status']==1){ 
                                                     echo '<a href="admin_status.php?id='.$row['id'].'&status=2" class="btn btn-success btn-approve">Approve</a>';
                                                 ?>
-                                                    <!-- <input type="submit" name="approve" value="Approve" class="btn btn-success btn-approve"> -->
+                                                
                                                 <?php } ?></td>                                            
                                             </tr>
                                     <?php }} ?>

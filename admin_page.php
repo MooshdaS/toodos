@@ -76,7 +76,7 @@ if(isset($_POST['submit'])){
                         </div>
                         <div class="row form-row">
                             <div class="select">
-                                <select name="format" id="format">
+                                <select name="format" id="format" required>
                                     <option selected disabled>Assign Task To A User</option>
                                     <option required> <?php echo $options; ?> </option>
                                 </select>

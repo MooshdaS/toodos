@@ -157,16 +157,19 @@ input::placeholder{
     cursor: pointer;
     display: block;
     margin: auto;
+    margin-top: 15px;
     background: #8e4fdf;
     border: 0;
     outline: none;
     border-radius: 30px;
 }
 
-.option-btn{
+.ooption-btn{
     width: 100%;
-    padding: 10px 0;
+    padding: 2px 0;
     margin: 5px, 0;
+    margin-bottom: 5px;
+    margin-top: 15px;
     border-left: 0;
     border-top: 0;
     border-right: 0;
@@ -174,8 +177,8 @@ input::placeholder{
     outline: none;
     background: transparent;
     cursor: pointer;
-    margin-bottom: 25px;
-    color: white;
+    margin-bottom: 15px;
+    color: rgba(201, 201, 201, 0.795);
 }
 
 .check-box{
@@ -203,10 +206,17 @@ span{
     font-size: 15;
 }
 
-#register option{
-    color: #999;
+.option-btn{
+    color: rgb(0, 0, 0);
     background: transparent;
-    background-color: rgb(48, 46, 46);   
+    margin-top: 5px;
+    border-bottom: 2px solid #999;
+    border-radius: 20px; 
+}
+
+.options{
+    color: black;
+    background-color: rgba(107, 105, 105, 0.733);
 }
 
 .form-data{
@@ -430,6 +440,9 @@ table td{
 .column-7{
     width: 50%;
     color: white;
+    margin-left: 62%;
+    margin-top: -5%;
+
 }
 
 .section-data{
@@ -442,7 +455,9 @@ table td{
     padding: 20px;
     overflow: hidden;
     border-radius: 20px;
+    overflow-y: scroll;
 }
+
 
 .section-head{
     padding: 10px;

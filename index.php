@@ -107,21 +107,16 @@ if(isset($_POST['rsubmit'])){
                             <button type="submit" name="lsubmit" class="lsubmit-btn">Login</button>
                         </form>
                         <form id="register" class="input-group-register" method="post">
-                            <?php
-                            if(isset($error)){
-                                foreach($error as $error){
-                                    echo '<span class="error-msg">'.$error.'</span>';
-                                };
-                            };
-                            ?>
                             <input type="text" name="username" class="input-field" placeholder="Userame" required>
                             <input type="email" name="email" class="input-field" placeholder="Email" required>
                             <input type="password" name="password" class="input-field" placeholder="Enter Password" required>
                             <input type="password" name="cpassword" class="input-field" placeholder="Confirm Password" required>
-                            <select name="user_type" class="option-btn">
-                                <option value="user">user</option>
-                                <option value="admin">admin</option>
-                            </select>
+                            <div class="option-btn">
+                                <select name="user_type" class="ooption-btn">
+                                    <option value="user" class="options">user</option>
+                                    <option value="admin" class="options">admin</option>
+                                </select>
+                            </div>
                             <button type="submit" name="rsubmit" class="rsubmit-btn">Register</button>
                         </form>
                     </div>
